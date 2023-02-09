@@ -11,23 +11,23 @@ spec:
         path: "/"
         backend:
           service:
-            name: login
+            name: web1
             port:
               number: 80
        - pathType: Prefix
         path: "/forgot"
         backend:
           service:
-            name: forgot
+            name: web2
             port:
               number: 80
   - host: payment.example.com
     http:
       paths:
-      - pathType: payment
+      - pathType: Prefix
         path: "/"
         backend:
           service:
-            name: service2
+            name: web3
             port:
               number: 80
