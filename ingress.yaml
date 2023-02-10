@@ -14,7 +14,7 @@ spec:
             name: login
             port:
               number: 80
-       - pathType: Prefix
+      - pathType: Prefix
         path: "/forgot"
         backend:
           service:
