@@ -4,30 +4,30 @@ metadata:
   name: web-ingress
 spec:
   rules:
-  - host: login.example.com
+  - host: login.devopsdude.space
     http:
       paths:
       - pathType: Prefix
         path: "/"
         backend:
           service:
-            name: web1
+            name: login
             port:
               number: 80
        - pathType: Prefix
         path: "/forgot"
         backend:
           service:
-            name: web2
+            name: forgot
             port:
               number: 80
-  - host: payment.example.com
+  - host: payment.devopsdude.space
     http:
       paths:
       - pathType: Prefix
         path: "/"
         backend:
           service:
-            name: web3
+            name: portal
             port:
               number: 80
