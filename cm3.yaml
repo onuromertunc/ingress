@@ -2,6 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: portal
+  namespace: test
 data:
   index.html: |
     portal
